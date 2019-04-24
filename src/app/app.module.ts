@@ -7,7 +7,8 @@ import { PanelModule } from 'primeng/panel';
 import { KeyFilterModule } from 'primeng/keyfilter';
 import { InputMaskModule } from 'primeng/inputmask';
 import { ButtonModule } from 'primeng/button';
-
+import { ProgressBarModule } from 'primeng/progressbar';
+import { DialogModule } from 'primeng/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +25,9 @@ import { AppComponent } from './app.component';
     PanelModule,
     KeyFilterModule,
     InputMaskModule,
-    ButtonModule
+    ButtonModule,
+    ProgressBarModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

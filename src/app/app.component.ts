@@ -8,19 +8,27 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title: string;
-  leftPanelTitle: string;
-  rightPanelTitle: string;
+  panelTitle: string;
   date: string;
   time: string;
   btnTitle: string;
   isBtnDisabled: boolean;
+  colorButton: string;
+  progressBarSize: string;
+  dialogVisible: boolean;
 
   constructor() {
     this.title = '"Pico y Placa" Predictor';
-    this.leftPanelTitle = 'Data in';
-    this.rightPanelTitle = 'Result';
+    this.panelTitle = 'Data in';
     this.btnTitle = 'Ask';
-    this.isBtnDisabled = true;
+    this.isBtnDisabled = false;
+    this.colorButton = 'ui-button-success';
+    this.progressBarSize = '6px';
+    this.dialogVisible = false;
+  }
+
+  ask(): void {
+    this.dialogVisible = true;
   }
 
 }

@@ -1,7 +1,8 @@
 .container {
   font-family: Ubuntu;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 10%;
 }
 
 .title {
@@ -13,6 +14,7 @@
 .carPlate input {
   width: 70%;
   height: 33px;
+  margin-top: 2%;
 }
 
 .carPlate input::placeholder {
@@ -23,6 +25,7 @@
   width: 20%;
   height: 33px;
   font-size: 11px;
+  margin-top: 2%;
   margin-left: 5%;
 }
 
@@ -36,4 +39,10 @@
 
 .date-title span{
   margin-left: 8%;
+}
+
+.pyp-button {
+  margin-top: 1%;
+  margin-left: 80%;
+  margin-right: auto;
 }

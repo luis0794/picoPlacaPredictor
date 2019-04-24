@@ -6,8 +6,9 @@
   </div>
 
   <div class="p-grid">
-    <div class="p-col-5">
-      <p-panel header="{{ leftPanelTitle }}">
+    <div class="p-col">
+
+      <p-panel header="{{ panelTitle }}">
 
         <div class="p-grid">
           <div class="p-col carPlate">
@@ -30,7 +31,7 @@
               class="date"
               mask="99/99/9999"
               placeholder="dd/mm/yyyy"
-              slotChar="mm/dd/yyyy"></p-inputMask>
+              slotChar="dd/mm/yyyy"></p-inputMask>
           </div>
 
           <div class="p-col-5">
@@ -43,21 +44,30 @@
           </div>
         </div>
 
-        <div class="p-grid p-justify-end">
+        <div class="p-grid pyp-button">
           <div class="p-col-3">
-            <button pButton [disabled]=isBtnDisabled type="button" label="{{ btnTitle }}" class="ui-button-rounded ui-button-success"></button>
+            <button
+              pButton
+              [disabled]=isBtnDisabled
+              type="button"
+              label="{{ btnTitle }}"
+              class="ui-button-rounded {{ colorButton }}"
+              (click)="ask()"></button>
           </div>
         </div>
 
       </p-panel>
-    </div>
 
-    <div class="p-col-7">
-      <p-panel header="{{ rightPanelTitle }}">
-        Content
-      </p-panel>
+      <p-progressBar
+        mode="indeterminate"
+        [style]="{'height': progressBarSize }"></p-progressBar>
     </div>
   </div>
 </div>
+
+
+<p-dialog header="Result" [(visible)]="dialogVisible">
+  Content
+</p-dialog>
 
 <router-outlet></router-outlet>
