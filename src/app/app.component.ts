@@ -16,6 +16,7 @@ export class AppComponent {
   colorButton: string;
   progressBarSize: string;
   dialogVisible: boolean;
+  canCirculate: boolean;
 
   constructor() {
     this.title = '"Pico y Placa" Predictor';
@@ -25,6 +26,7 @@ export class AppComponent {
     this.colorButton = 'ui-button-success';
     this.progressBarSize = '6px';
     this.dialogVisible = false;
+    this.canCirculate = false;
   }
 
   ask(): void {

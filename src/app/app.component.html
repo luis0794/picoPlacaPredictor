@@ -67,7 +67,13 @@
 
 
 <p-dialog header="Result" [(visible)]="dialogVisible">
-  Content
+  <div *ngIf="canCirculate">
+    <h3>Can circulate</h3>
+  </div>
+
+  <div *ngIf="!canCirculate">
+    <h3>Cant circulate</h3>
+  </div>
 </p-dialog>
 
 <router-outlet></router-outlet>
