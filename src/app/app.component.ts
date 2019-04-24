@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'picoPlacaPredictor';
+
+  title: string;
+  leftPanelTitle: string;
+  rightPanelTitle: string;
+  date: string;
+  time: string;
+  btnTitle: string;
+  isBtnDisabled: boolean;
+
+  constructor() {
+    this.title = '"Pico y Placa" Predictor';
+    this.leftPanelTitle = 'Data in';
+    this.rightPanelTitle = 'Result';
+    this.btnTitle = 'Ask';
+    this.isBtnDisabled = true;
+  }
+
 }

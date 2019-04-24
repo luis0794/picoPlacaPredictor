@@ -1,0 +1,39 @@
+.container {
+  font-family: Ubuntu;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.carPlate input {
+  width: 70%;
+  height: 33px;
+}
+
+.carPlate input::placeholder {
+  padding-left: 2%;
+}
+
+.carPlate span {
+  width: 20%;
+  height: 33px;
+  font-size: 11px;
+  margin-left: 5%;
+}
+
+:host ::ng-deep .ui-inputtext {
+  width: 90%;
+}
+
+:host ::ng-deep .date input {
+  margin-left: 8%;
+}
+
+.date-title span{
+  margin-left: 8%;
+}
