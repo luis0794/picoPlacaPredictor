@@ -14,11 +14,12 @@
           <div class="p-col carPlate">
             <div class="ui-inputgroup">
               <span class="ui-inputgroup-addon">A-Z 0-9</span>
-              <input
-                type="text"
-                pKeyFilter="alphanum"
-                pInputText
-                placeholder="Car number plate">
+                <p-inputMask
+                  [(ngModel)]="carPlate"
+                  class="carPlate"
+                  mask="aaa-9999"
+                  placeholder="XXX-0000"
+                  slotChar="XXX-0000"></p-inputMask>
             </div>
           </div>
         </div>
@@ -57,23 +58,13 @@
         </div>
 
       </p-panel>
-
-      <p-progressBar
-        mode="indeterminate"
-        [style]="{'height': progressBarSize }"></p-progressBar>
     </div>
   </div>
 </div>
 
 
 <p-dialog header="Result" [(visible)]="dialogVisible">
-  <div *ngIf="canCirculate">
-    <h3>Can circulate</h3>
-  </div>
-
-  <div *ngIf="!canCirculate">
-    <h3>Cant circulate</h3>
-  </div>
+  <h3>{{ messageResult }}</h3>
 </p-dialog>
 
 <router-outlet></router-outlet>

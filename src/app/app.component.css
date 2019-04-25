@@ -11,10 +11,11 @@
   text-align: center;
 }
 
-.carPlate input {
-  width: 70%;
+:host ::ng-deep .carPlate input {
+  width: 128%;
   height: 33px;
-  margin-top: 2%;
+  margin-top: 3.5%;
+  text-transform: uppercase;
 }
 
 .carPlate input::placeholder {
@@ -34,7 +35,7 @@
 }
 
 :host ::ng-deep .date input {
-  margin-left: 8%;
+  margin-left: 0%;
 }
 
 .date-title span{
@@ -45,4 +46,8 @@
   margin-top: 1%;
   margin-left: 80%;
   margin-right: auto;
+}
+
+:host ::ng-deep .ui-dialog-titlebar-icon {
+  color: white;
 }
